@@ -1,12 +1,4 @@
-// document.addEventListener("click", () => {
-//   let toan = parseFloat(document.getElementById("inpToan").value);
-//   let ly = parseFloat(document.getElementById("inpLy").value);
-//   let hoa = parseFloat(document.getElementById("inpHoa").value);
 
-//   let dtb = (toan + ly + hoa) / 3;
-
-//   document.getElementById("tbKhoi1").innerHTML = dtb;
-// });
 
 let tinhDTB = (...n) => {
   let tong = 0;
@@ -31,14 +23,3 @@ document.getElementById("btnKhoi2").onclick = () => {
   document.getElementById("tbKhoi2").innerHTML = tinhDTB(van, su, dia, english);
 };
 
-// document.addEventListener(
-//   (tinhDTB = (...e) => {
-//     let n = 0;
-//     return (
-//       e.map((e) => {
-//         n += parseFloat(e);
-//       }),
-//       (n / e.length).toFixed(2)
-//     );
-//   })
-// ),
