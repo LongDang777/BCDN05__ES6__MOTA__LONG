@@ -24,15 +24,16 @@ let loadColor = () => {
 loadColor();
 
 
- let colorBTN = document.getElementsByClassName("color-button"),
-   house = document.getElementById("house");
-
+ let colorBTN = document.getElementsByClassName("color-button");
+ 
  for (let i = 0; i < colorBTN.length; i++)
-
-   colorBTN[i].addEventListener("click", function () {
-     changeColor(colorList[i], i);
-   });
-
+ 
+ colorBTN[i].addEventListener("click", function () {
+   changeColor(colorList[i], i);
+  });
+  
+  let house = document.getElementById("house");
+  
  changeColor = (i, j) => {
    for (let i = 0; i < colorBTN.length; i++)
      colorBTN[i].classList.remove("active");

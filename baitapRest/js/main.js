@@ -1,8 +1,6 @@
-
-
 let tinhDTB = (...n) => {
   let tong = 0;
-  for (let i = 0; i < n.length; i++) {
+  for (let i in n) {
     tong += parseFloat(n[i]);
   }
   let dtb = tong / n.length;
@@ -22,4 +20,3 @@ document.getElementById("btnKhoi2").onclick = () => {
     english = document.getElementById("inpEnglish").value;
   document.getElementById("tbKhoi2").innerHTML = tinhDTB(van, su, dia, english);
 };
-
